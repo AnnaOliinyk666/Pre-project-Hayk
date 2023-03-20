@@ -2,7 +2,7 @@
 
 import { categoriesLoadAction } from "../reducer/categoriesReducer";
 
-const categoryURL = 'https://fakestoreapi.com/products/categories';
+const categoryURL = 'https://dummyjson.com/products/categories';
 
 // const getCategory = () => {
 //     const request = axios.get(categoryURL)
