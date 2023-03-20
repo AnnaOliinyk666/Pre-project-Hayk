@@ -1,0 +1,24 @@
+/* .card{
+    border: 2px solid black;
+    padding: 25px;
+    width: 300px;
+    margin: 20px auto;
+    text-transform: uppercase;
+    font-weight: 600;
+} */
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 40px;
+    font-style: italic;
+    font-size: 30px;
+    color: rgb(55, 84, 146);
+}
