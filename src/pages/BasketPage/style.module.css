@@ -1,0 +1,15 @@
+.box{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+    align-items: center;
+}
+.box button{
+    padding: 10px;
+    width: 30%;
+    background-color: rgb(243, 200, 200);
+    border: none;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

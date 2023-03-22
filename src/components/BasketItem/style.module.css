@@ -1,0 +1,26 @@
+.container{
+    
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 30px;
+    align-items: center;
+}
+.container img{
+    height: 80px;
+    object-fit: contain;
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.btns button{
+    padding: 5px 7px;
+    border: none;
+    background-color: rgb(220, 232, 243);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 3px;
+}
