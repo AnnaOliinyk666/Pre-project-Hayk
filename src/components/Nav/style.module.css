@@ -5,7 +5,7 @@
     color: rgb(250, 250, 250);
     padding: 15px;
 }
-.nav a{
+/* .nav a{
     color: rgb(247, 244, 244);
     text-decoration: none;
     font-size: 20px;
@@ -14,4 +14,4 @@
 .active{
     border-bottom: 2px solid rgb(247, 245, 245);
     padding-bottom: 5px;
-}
+} */

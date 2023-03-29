@@ -1,0 +1,30 @@
+
+.link {
+    color: rgb(247, 244, 244);
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: relative;
+}
+.active{
+    border-bottom: 2px solid rgb(247, 245, 245);
+    padding-bottom: 5px;
+}
+.link[data-count]::after{
+    content: attr(data-count);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%,50%);
+    width: 20px;
+    height: 20px;
+    background-color: azure;
+    font-size: 15px;
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+
+}

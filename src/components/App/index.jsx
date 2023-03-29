@@ -13,17 +13,20 @@ import { asynkLoadProductsAction } from '../../store/asyncAction/products';
 // import ShowSelectCategory from '../../pages/ShowSelectCategory';
 import ProductDescriptionPage from '../../pages/ProductDescriptionPage';
 import Footer from '../Footer';
+import BlogPage from '../../pages/BlogPage';
+
 
 function App() {
   const dispatch = useDispatch();
   useEffect (() => {
     dispatch(asynkLoadCategoriesAction);
     dispatch(asynkLoadProductsAction);
-  },[]);
+  }, []);
   
   return (
     <div className="App">
       <Nav/>
+      
       <Routes>
         <Route path="/" element={<CategoriesPage/>}/>
         <Route path="/products/all" element={<ProductsPage/>}/>
@@ -31,6 +34,7 @@ function App() {
         <Route path="/*" element={<NotFoundPage/>}/>
         <Route path="/category/:category" element={<ProductsPage/>}/>
         <Route path="/products/:id" element={<ProductDescriptionPage/>}/>
+        <Route path="/blog" element={<BlogPage/>}/>
   
       </Routes>
       <Footer/>

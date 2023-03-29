@@ -1,0 +1,14 @@
+.input{
+    border: 2px solid black;
+    padding: 10px;
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+}
+.input input{
+    padding: 5px;
+    outline: none;
+    border: none;
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
-import { basketDecrementAction, basketIncrementAction } from '../../store/reducer/basketReducer';
+import { basketDecrementAction, basketIncrementAction, basketRemoveAction } from '../../store/reducer/basketReducer';
 
 
 import s from './style.module.css'
@@ -16,6 +16,7 @@ export default function BasketItem({id,thumbnail,title,price,count}) {
         <div className={s.btns}> 
             <button onClick={()=>dispatch(basketIncrementAction(id))}>+</button>
             <button onClick={()=>dispatch(basketDecrementAction(id))}>-</button>
+            <button onClick={()=>dispatch(basketRemoveAction(id))}>X</button>
         </div>
         
     </div>
