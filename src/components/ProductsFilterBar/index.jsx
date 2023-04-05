@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
-import { productsSearchAction } from '../../store/reducer/productsReducer';
+import { productsSearchAction, productsSortPriceAction } from '../../store/reducer/productsReducer';
 import s from './style.module.css'
 
 export default function ProductsFilterBar() {
@@ -12,7 +12,7 @@ export default function ProductsFilterBar() {
         
     }
     const sortOnChange = (e) => {
-        console.log(e.target.value);
+        dispatch(productsSortPriceAction(+e.target.value));
     }
   return (
     <div className={s.input}>

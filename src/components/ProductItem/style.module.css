@@ -18,3 +18,12 @@
     width: 80%;
     margin: 20px;
 }
+.oldPrice{
+    color: rgb(189, 188, 188);
+    text-decoration: line-through;
+    
+}
+.newPrice{
+    color: red;
+    font-weight: bold;
+}
